@@ -40,9 +40,22 @@ function parseWav(wav) {
 
 function playHTMLAudioElement(wav) {
 
-  document.getElementById("audio").innerHTML=("<audio controls id=\"player\" src=\"data:audio/x-wav;base64,"+encode64(wav)+"\">");
+  //document.getElementById("audio").innerHTML=("<audio controls id=\"player\" src=\"data:audio/x-wav;base64,"+encode64(wav)+"\">");
+ // document.getElementById("player").play();
+//}
+
+
+document.getElementById("audio").innerHTML=("<audio controls id=\"player\" src=\"Pitri.wav"+encode64(wav)+"\">");
   document.getElementById("player").play();
 }
+
+
+
+
+
+
+
+
 
 function encode64(bytes) {
   var base64    = ''
